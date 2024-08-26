@@ -2,7 +2,7 @@ var count = 0;
 // Update the count display
 var updateCountDisplay = function () {
     var countElement = document.getElementById("count");
-    //it shows possibly null
+    //it shows possibly null error on vscode
     //   countElement.textContent = count;
     if (countElement) {
         countElement.textContent = count.toString();
@@ -30,9 +30,10 @@ var reset = function () {
 var incrementBtn = document.getElementById("increment-button");
 var decrementBtn = document.getElementById("decrement-button");
 var restBtn = document.getElementById("reset-button");
-//it shows possibly null
+//it shows possibly null error on vscode
 //document.getElementById( "increment-button").onclick = increment;
 // document.getElementById("decrement-button").onclick = decrement;
+//document.getElementById('reset-button').onclick = reset;
 if (incrementBtn) {
     incrementBtn.onclick = increment;
 }
